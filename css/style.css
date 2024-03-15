@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  height: 400vh;
+}
+
+.header {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 100;
+}
+
+.ul-nav {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.video-header {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.first-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.li-nav {
+  font-size: 80%;
+  font-weight: 700;
+}
+
+.header-section {
+  position: absolute;
+  bottom: 0;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading-h3 {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.heading-h2 {
+  font-weight: 700;
+  font-size: 180%;
+}
+
+.button-secondary,
+.button-primary {
+  font-size: 85%;
+  font-weight: 300;
+  border-radius: 100px;
+  width: 150px;
+  background: white;
+  border: none;
+  padding: 12px 0;
+  transition: 0.2s all;
+}
+
+.button-secondary {
+  background: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.search {
+  font-size: 85%;
+  font-weight: 300;
+  border-radius: 100px;
+  padding: 12px 20px;
+  width: 280px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+.second-wrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.button-icon {
+  display: none;
+  font-size: 200%;
+  background: transparent;
+  border: none;
+  color: white
+}
+
+.button-icon:hover {
+  cursor: pointer;
+}
+
+
+
+.icon-in-button {
+  position: absolute;
+  bottom: 0;
+
+
+}
+
+@media screen and (max-width:1000px) {
+
+  .li-nav,
+  .search,
+  .button-secondary {
+    display: none;
+  }
+
+  .primary-nav,
+  .header-section {
+    padding: 10px 20px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    font-size: 200%;
+    /* Adjust the percentage as needed */
+    letter-spacing: 3px;
+  }
+
+  .heading-h3 {
+    font-size: 120%;
+    /* Increase font size for heading-h3 */
+  }
+
+  .heading-h2 {
+    font-size: 235%;
+    /* Increase font size for heading-h2 */
+  }
+
+  .button-primary {
+    font-size: 120%;
+    /* Increase font size for primary button */
+    width: 190px;
+    /* Adjust width if necessary */
+    height: 50px;
+  }
+
+  .button-icon {
+    display: block;
+  }
+
+}
